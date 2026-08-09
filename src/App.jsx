@@ -76,13 +76,13 @@ function App() {
           <div className="animate__animated animate__fadeInUp animate__delay-3s">
             <div className="flex items-center gap-3 mb-6 bg bg-zinc-800 w-fit p-4 rounded-2xl">
               <img src="/assets/farhan1.png" className="w-10 rounded-md" />
-              <q>Commit Or Quit</q>
+              <q>Commit And Push</q>
             </div>
             <h1 className="text-5xl font-bold mb-6">
-              <ShinyText text="Hi I'm Farhan Maulana" disabled={false} speed={3} className='custom-class' />
+              <ShinyText text="Halo, Saya Farhan Maulana" disabled={false} speed={3} className='custom-class' />
             </h1>
             <BlurText
-              text="Application and web developer passionate about turning ideas into modern, high-performance, user-centric digital experiences."
+              text="Pengembang aplikasi dan web yang bersemangat dalam mengubah ide menjadi pengalaman digital yang modern, berkinerja tinggi, dan berpusat pada pengguna."
               delay={150}
               animateBy="words"
               direction="top"
@@ -94,11 +94,11 @@ function App() {
                 download="Farhan_maulana_CV.pdf" 
                 className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors"
               >
-                <ShinyText text="Download CV" disabled={false} speed={3} className="custom-class" />
+                <ShinyText text="Unduh CV" disabled={false} speed={3} className="custom-class" />
               </a>
 
               <a href="#project" className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full border border-gray-700 hover:bg-[#222] transition-colors">
-                <ShinyText text="Explore My Projects" disabled={false} speed={3} className="custom-class" />
+                <ShinyText text="Jelajahi Proyek Saya" disabled={false} speed={3} className="custom-class" />
               </a>
             </div>
 
@@ -106,10 +106,10 @@ function App() {
           <div className="md:ml-auto flex items-center justify-center animate__animated animate__fadeInUp animate__delay-4s">
             <ProfileCard
               name="Farhan Maulana"
-              title="Web Developer"
+              title="Pengembang Web Dan Mobile"
               handle="farhanmaulana"
               status="Online"
-              contactText="Contact Me"
+              contactText="Hubungi Saya"
               avatarUrl="./assets/farhan.png"
               showUserInfo={true}
               enableTilt={true}
@@ -125,11 +125,11 @@ function App() {
               {/* Kolom kiri */}
               <div className="flex-1 text-left">
                 <h2 className="text-3xl md:text-4xl font-bold text-white mb-5">
-                  About Me
+                  Tentang Saya
                 </h2>
 
                 <BlurText
-                  text="I’m Farhan Maulana, A full-stack developer focused on creating modern, high-performance applications with intuitive user experiences. I work across the entire stack, leveraging the latest technologies such as Artificial Intelligence, Machine Learning, and cloud platforms to build scalable and impactful digital solutions. With over three years of experience and 20+ completed projects, I help businesses and users grow through functional, efficient, and visually refined products."
+                  text="Saya Farhan Maulana, seorang pengembang full-stack yang berfokus pada pembuatan aplikasi modern dan berkinerja tinggi dengan pengalaman pengguna yang intuitif. Saya bekerja dengan berbagai macam teknologi, memanfaatkan teknologi terbaru seperti Kecerdasan Buatan (AI), Pembelajaran Mesin (Machine Learning), dan platform cloud untuk membangun solusi digital yang terukur dan berdampak. Dengan pengalaman lebih dari tiga tahun dan 10+ proyek yang telah diselesaikan, saya membantu bisnis dan pengguna berkembang melalui produk yang fungsional, efisien, dan disempurnakan secara visual."
                   delay={150}
                   animateBy="words"
                   direction="top"
@@ -139,27 +139,27 @@ function App() {
                 <div className="flex flex-col sm:flex-row items-center sm:justify-between text-center sm:text-left gap-y-8 sm:gap-y-0 mb-4 w-full">
                   <div>
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      20<span className="text-violet-500">+</span>
+                      10<span className="text-violet-500">+</span>
                     </h1>
-                    <p>Project Finished</p>
+                    <p>Proyek Selesai</p>
                   </div>
                   <div>
                     <h1 className="text-3xl md:text-4xl mb-1">
                       3<span className="text-violet-500">+</span>
                     </h1>
-                    <p>Years of Experience</p>
+                    <p>Tahun Pengalaman</p>
                   </div>
                   <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-once="true">
                     <h1 className="text-3xl md:text-4xl mb-1">
-                      3.81<span className="text-violet-500">/4.00</span>
+                      3.90<span className="text-violet-500">/4.00</span>
                     </h1>
-                    <p>GPA</p>
+                    <p>IPK</p>
                   </div>
                 </div>
 
 
                 <ShinyText
-                  text="Working with heart, creating with mind."
+                  text="Bekerja dengan hati, berkreasi dengan pikiran."
                   disabled={false}
                   speed={3}
                   className="text-sm md:text-base text-violet-400"
@@ -175,8 +175,8 @@ function App() {
 
         </div>
         <div className="tools mt-32">
-          <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >Tools & Technologies</h1>
-          <p className="w-2/5 text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">My Profesional Skills</p>
+          <h1 className="text-4xl/snug font-bold mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true" >Alat & Teknologi</h1>
+          <p className="w-2/5 text-base/loose opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Keahlian Profesional Saya</p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
 
             {listTools.map((tool) => (
@@ -208,8 +208,8 @@ function App() {
 
         {/* Proyek */}
         <div className="proyek mt-32 py-10" id="project" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"></div>
-        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Project</h1>
-        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Showcasing a selection of projects that reflect my skills, creativity, and passion for building meaningful digital experiences.</p>
+        <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Proyek</h1>
+        <p className="text-base/loose text-center opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Menampilkan pilihan proyek yang mencerminkan keterampilan, kreativitas, dan hasrat saya dalam membangun pengalaman digital yang bermakna.</p>
         <div className="proyek-box mt-14" >
 
           <div style={{ height: 'auto', position: 'relative' }} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true" >
@@ -234,7 +234,7 @@ function App() {
             data-aos-duration="1000"
             data-aos-once="true"
           >
-            Contact & Chat
+            Kontak & Obrolan
           </h1>
           <p
             className="text-base/loose text-center mb-10 opacity-50"
@@ -243,7 +243,7 @@ function App() {
             data-aos-delay="300"
             data-aos-once="true"
           >
-            Get in touch with me or chat in real-time
+            Hubungi saya atau mengobrol secara langsung (real-time)
           </p>
 
           {/* Container dua kolom */}
@@ -267,11 +267,11 @@ function App() {
               >
                 <div className="flex flex-col gap-6">
                   <div className="flex flex-col gap-2">
-                    <label className="font-semibold">Full Name</label>
+                    <label className="font-semibold">Nama Lengkap</label>
                     <input
                       type="text"
                       name="Name"
-                      placeholder="Input Name..."
+                      placeholder="Masukkan Nama..."
                       className="border border-zinc-500 p-2 rounded-md"
                       required
                     />
@@ -281,19 +281,19 @@ function App() {
                     <input
                       type="email"
                       name="Email"
-                      placeholder="Input Email..."
+                      placeholder="Masukkan Email..."
                       className="border border-zinc-500 p-2 rounded-md"
                       required
                     />
                   </div>
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="message" className="font-semibold">Message</label>
+                    <label htmlFor="message" className="font-semibold">Pesan</label>
                     <textarea
                       name="message"
                       id="message"
                       cols="45"
                       rows="7"
-                      placeholder="Message..."
+                      placeholder="Tulis Pesan..."
                       className="border border-zinc-500 p-2 rounded-md"
                       required
                     ></textarea>
@@ -303,7 +303,7 @@ function App() {
                       type="submit"
                       className="font-semibold bg-[#1a1a1a] p-4 px-6 rounded-full w-full cursor-pointer border border-gray-700 hover:bg-[#222] transition-colors"
                     >
-                      <ShinyText text="Send" disabled={false} speed={3} className="custom-class" />
+                      <ShinyText text="Kirim" disabled={false} speed={3} className="custom-class" />
                     </button>
                   </div>
                 </div>
