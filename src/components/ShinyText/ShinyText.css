@@ -1,16 +1,29 @@
 .shiny-text {
-  color: #b5b5b5a4; /* Adjust this color to change intensity/style */
+  color: #27272a;
   background: linear-gradient(
     120deg,
-    rgba(255, 255, 255, 0) 40%,
-    rgba(255, 255, 255, 0.8) 50%,
-    rgba(255, 255, 255, 0) 60%
+    rgba(39, 39, 42, 0.95) 35%,
+    rgba(124, 58, 237, 1) 50%,
+    rgba(39, 39, 42, 0.95) 65%
   );
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   display: inline-block;
   animation: shine 5s linear infinite;
+}
+
+:where(.dark, .dark *) .shiny-text {
+  color: #b5b5b5a4;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.85) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @keyframes shine {

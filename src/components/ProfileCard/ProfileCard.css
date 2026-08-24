@@ -96,8 +96,12 @@
   inset: 1px;
   position: absolute;
   background-image: var(--inner-gradient);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(255, 255, 255, 0.85);
   transform: translate3d(0, 0, 0.01px);
+}
+
+:where(.dark, .dark *) .pc-inside {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .pc-shine {
@@ -213,12 +217,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(30px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
   padding: 12px 14px;
   pointer-events: auto;
+}
+
+:where(.dark, .dark *) .pc-user-info {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
 }
 
 .pc-user-details {
@@ -232,8 +243,12 @@
   height: 48px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
+}
+
+:where(.dark, .dark *) .pc-mini-avatar {
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .pc-mini-avatar img {
@@ -253,32 +268,54 @@
 .pc-handle {
   font-size: 14px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
   line-height: 1;
+}
+
+:where(.dark, .dark *) .pc-handle {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .pc-status {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #64748b;
   line-height: 1;
 }
 
+:where(.dark, .dark *) .pc-status {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .pc-contact-btn {
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 8px;
   padding: 8px 16px;
   font-size: 14px;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.9);
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.9);
   cursor: pointer;
   transition: all 0.2s ease;
   backdrop-filter: blur(10px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .pc-contact-btn:hover {
-  border-color: rgba(255, 255, 255, 0.4);
+  border-color: rgba(0, 0, 0, 0.25);
+  background: #f1f5f9;
   transform: translateY(-1px);
-  transition: all 0.2s ease;
+}
+
+:where(.dark, .dark *) .pc-contact-btn {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  background: transparent;
+  box-shadow: none;
+}
+
+:where(.dark, .dark *) .pc-contact-btn:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .pc-content {
@@ -303,12 +340,15 @@
   font-weight: 600;
   margin: 0;
   font-size: min(5svh, 3em);
-  margin: 0;
-  background-image: linear-gradient(to bottom, #fff, #6f6fbe);
+  background-image: linear-gradient(to bottom, #0f172a, #6366f1);
   background-size: 1em 1.5em;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+:where(.dark, .dark *) .pc-details h3 {
+  background-image: linear-gradient(to bottom, #fff, #6f6fbe);
 }
 
 .pc-details p {
@@ -319,11 +359,15 @@
   font-size: 16px;
   margin: 0 auto;
   width: min-content;
-  background-image: linear-gradient(to bottom, #fff, #4a4ac0);
+  background-image: linear-gradient(to bottom, #1e293b, #4f46e5);
   background-size: 1em 1.5em;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+:where(.dark, .dark *) .pc-details p {
+  background-image: linear-gradient(to bottom, #fff, #4a4ac0);
 }
 
 @keyframes glow-bg {
