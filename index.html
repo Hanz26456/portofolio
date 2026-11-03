@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="dark scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.ico" />
@@ -11,6 +11,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <title>Farhan Portofolio</title>
+
+    <script>
+      (function () {
+        // Reset preferensi lama jika pernah tersimpan otomatis dari deteksi OS sebelumnya
+        const themeVersion = localStorage.getItem("portfolio_theme_version");
+        if (!themeVersion) {
+          localStorage.removeItem("portfolio_theme");
+          localStorage.setItem("portfolio_theme_version", "v2");
+        }
+
+        const savedTheme = localStorage.getItem("portfolio_theme");
+        if (savedTheme === "light") {
+          document.documentElement.classList.remove("dark");
+          document.documentElement.classList.add("light");
+        } else {
+          document.documentElement.classList.add("dark");
+          document.documentElement.classList.remove("light");
+        }
+      })();
+    </script>
   </head>
   <body class="bg-slate-50 text-zinc-900 dark:bg-zinc-950 dark:text-white transition-colors duration-300 min-h-screen" id="home">
     <div id="root"></div>

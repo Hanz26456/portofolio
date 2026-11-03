@@ -4,19 +4,12 @@ const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    // 1. Cek dari localStorage
+    // 1. Cek dari localStorage jika user pernah memilih tema secara manual
     const savedTheme = localStorage.getItem("portfolio_theme");
     if (savedTheme === "dark" || savedTheme === "light") {
       return savedTheme;
     }
-    // 2. Cek preferensi sistem OS
-    if (
-      typeof window !== "undefined" &&
-      window.matchMedia("(prefers-color-scheme: light)").matches
-    ) {
-      return "light";
-    }
-    // 3. Default ke dark mode
+    // 2. Default ke dark mode
     return "dark";
   });
 
